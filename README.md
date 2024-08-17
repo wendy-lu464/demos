@@ -1,8 +1,7 @@
 # demos
 
-Here is a video:
-<video controls width="250">
-  <source src="/docs/assets/test-app.mp4" type="video/mp4" />
-</video>
+Here is a video: 
 
-![video](/docs/assets/test-app.mp4)
+<video width="600" autoplay muted>
+  <source src="/assets/test-app.mp4" type="video/mp4" />
+</video>
