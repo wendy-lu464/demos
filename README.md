@@ -2,7 +2,7 @@
 
 I implemented an Android application to track course data. 
 
-<video width="1200" autoplay muted>
+<video width="600" autoplay muted>
   <source src="/demos/docs/assets/test-app.mp4" type="video/mp4" />
 </video>
 Partial demo
