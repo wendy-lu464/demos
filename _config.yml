@@ -1,0 +1,25 @@
+title: Demos
+author:
+  name: Wendy Lu
+  email: wendy.lu464@gmail.com
+
+description: >-
+  Overviews and demos for projects made during my BCS at the University of Waterloo.
+baseurl: "demos"
+
+remote_theme: "jekyll/minima@0b7ca6b"
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+minima: 
+  nav_pages:
+    - 
+  social_links:
+    - title: Wendy Lu on GitHub
+      icon: github
+      url: "https://github.com/wendy-lu464"
+    - title: Wendy Lu at LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/in/wendy-lu464/"
+  hide_site_feed_link: true
