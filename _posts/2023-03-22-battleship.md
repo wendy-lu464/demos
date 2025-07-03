@@ -30,16 +30,16 @@ The player can click on a ship to pick it up or put it down. Once picked up, the
 Once all the ships are placed, the player can click the Start Game button. After clicking, the ships can't be moved.
 
 ### Game Loop
-The player goes first and can click a cell on the opponent's board to attack it. Light gray represents a miss, coral represents a hit, and dark gray represents a sunken ship. 
+The player goes first by clicking a cell on the opponent's board to attack it. Light gray represents a miss, coral represents a hit, and dark gray represents a sunken ship. 
 
-Once the player's turn is over, the opponent takes its turn and the result is reflected on the player's board.
+When the player's turn is over, the opponent takes its turn and the result is reflected on the player's board.
 
 <video width="100%" controls autoplay muted loop>
   <source src="assets/battleship/game-loop.mp4" type="video/mp4" />
 </video>
 
 ### Ending
-Once the game ends, the player's sunken ships remain on their board while the other ships return to their original positions. The text above the boards reflect who won.
+Once the game ends, the player's sunken ships remain on their board while the other ships return to their original positions. The top-middle text tells the player if they won or lost.
 
 <video width="100%" controls autoplay muted loop>
   <source src="assets/battleship/ending.mp4" type="video/mp4" />
