@@ -11,8 +11,8 @@ Battleship is a competitive two-player game where players take turns attempting 
 
 The game has three phases.
 
-1. **Setup**: Each player has a board and a set of 5 ships. Players place their ships on their board. They can't see where their opponent's ships are.
-2. **Game loop**: On their turn, the player picks a square on their opponent's board to fire at. A ship sinks when all the squares it's in has been fired at.
+1. **Setup**: Each player has a board with a grid system and a set of 5 ships. Players place their ships on their board. They can't see where their opponent's ships are.
+2. **Game loop**: On their turn, the player picks a grid cell on their opponent's board to fire at. A ship sinks when all the cells it's in have been fired at.
 3. **Ending**: A player wins once they sink all of their opponent's ships.
 
 ## Features
