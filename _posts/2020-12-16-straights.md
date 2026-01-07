@@ -31,65 +31,65 @@ When starting the game, the user can provide an integer command line argument as
 
 The program then prompts the user to specify which players are human and which are computers.
 
-<img src="../assets/straights/setup-h-or-c.png" alt="Screenshot of the interface specifying human and computer players.">
+<img src="assets/straights/setup-h-or-c.png" alt="Screenshot of the interface specifying human and computer players.">
 
 ### Game Loop
 During each human player's turn, the program prints out the cards in each pile, the cards in the player's hand, and what the legal plays are.
 
-<img src="../assets/straights/game-loop-h.png" alt="Screenshot of the interface when it's a human player's turn.">
+<img src="assets/straights/game-loop-h.png" alt="Screenshot of the interface when it's a human player's turn.">
 
 The player can type in the following commands:
 
 `play [card]`: Plays the card onto the appropriate pile. If it's not a legal play or a valid card, the program will print an error.
 
-<img src="../assets/straights/game-loop-play.png" alt="Screenshot of the interface when a human player plays a card.">
+<img src="assets/straights/game-loop-play.png" alt="Screenshot of the interface when a human player plays a card.">
 
 `discard [card]`: Discards the card. 
 
-<img src="../assets/straights/game-loop-valid-discard.png" alt="Screenshot of the interface when a human player discards a card.">
+<img src="assets/straights/game-loop-valid-discard.png" alt="Screenshot of the interface when a human player discards a card.">
 
 If the player tries to discard when a legal play is available, the program will print an error.
 
-<img src="../assets/straights/game-loop-invalid-discard.png" alt="Screenshot of the interface when a human player discards a card while a legal play is available.">
+<img src="assets/straights/game-loop-invalid-discard.png" alt="Screenshot of the interface when a human player discards a card while a legal play is available.">
 
 `quit`: Ends the program.
 
 `ragequit`: Replaces the current player with a computer player.
 
-<img src="../assets/straights/game-loop-ragequit.png" alt="Screenshot of the interface when a human player ragequits.">
+<img src="assets/straights/game-loop-ragequit.png" alt="Screenshot of the interface when a human player ragequits.">
 
 When it's a computer player's turn, the program simply prints what card it plays or discards.
 
-<img src="../assets/straights/game-loop-c.png" alt="Screenshot of the interface when computer players take their turns.">
+<img src="assets/straights/game-loop-c.png" alt="Screenshot of the interface when computer players take their turns.">
 
 ### End
 At the end of each round, the program prints each player's discarded cards and their previous and current score.
 
-<img src="../assets/straights/end-round.png" alt="Screenshot of the interface when a round ends.">
+<img src="assets/straights/end-round.png" alt="Screenshot of the interface when a round ends.">
 
 When the game ends, the program prints which player won. If there's a tie, then it'll print a statement for each winner.
 
-<img src="../assets/straights/end-game.png" alt="Screenshot of the interface when the game ends.">
+<img src="assets/straights/end-game.png" alt="Screenshot of the interface when the game ends.">
 
 ### Other Features
 During a human player's turn, the following commands are available for debugging purposes: 
 
 `deck`: Prints the cards in the deck prior to dealing.
 
-<img src="../assets/straights/game-loop-deck.png" alt="Screenshot of the interface after running the 'deck' command.">
+<img src="assets/straights/game-loop-deck.png" alt="Screenshot of the interface after running the 'deck' command.">
 
 `endscore [score]`: Sets the point total needed to end the game.
 
-<img src="../assets/straights/game-loop-endscore1.png" alt="Screenshot of the interface after running the 'endscore 25' command.">
+<img src="assets/straights/game-loop-endscore1.png" alt="Screenshot of the interface after running the 'endscore 25' command.">
 
 In the above example, the game will now end when a player exceeds 25 points, instead of the default 80 points.
 
-<img src="../assets/straights/game-loop-endscore2.png" alt="Screenshot of the interface showing how the game ends after a player exceeds 25 points.">
+<img src="assets/straights/game-loop-endscore2.png" alt="Screenshot of the interface showing how the game ends after a player exceeds 25 points.">
 
 #### Support for Other Player Counts
 The game by default has four players, but by starting the game with the `-bonus` command line argument, the user can choose the number of players.
 
-<img src="../assets/straights/set-start-player-count.png" alt="Screenshot of the interface when specifying the number of players.">
+<img src="assets/straights/set-start-player-count.png" alt="Screenshot of the interface when specifying the number of players.">
 
 Since the deck doesn't necessarily divide evenly between the players, the first player dealt to changes from round to round to avoid dealing the largest hands to the same players. If a player runs out of cards because they had a smaller hand, they simply don't do anything for the rest of the round.
 
