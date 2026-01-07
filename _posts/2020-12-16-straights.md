@@ -4,8 +4,6 @@ title: "Straights"
 permalink: /straights
 ---
 
-# Straights
-
 I implemented a four-player command line card game using C++ as the final project for my Object-Oriented Programming course.
 
 ## Game Overview
@@ -28,12 +26,12 @@ Once all cards have been played or discarded, the round is over. If no one has o
 The game ends when a player exceeds 80 points. The winner is the player with the least number of points.
 
 ## Features
-### Start
+### Setup
 When starting the game, the user can provide an integer command line argument as the seed. If one isn't provided, the program uses a seed based on the time.
 
 The program then prompts the user to specify which players are human and which are computers.
 
-<img src="../assets/straights/start-h-or-c.png" alt="Screenshot of the interface when the user is specifying human and computer players.">
+<img src="../assets/straights/setup-h-or-c.png" alt="Screenshot of the interface specifying human and computer players.">
 
 ### Game Loop
 During each human player's turn, the program prints out the cards in each pile, the cards in the player's hand, and what the legal plays are.
@@ -52,7 +50,7 @@ The player can type in the following commands:
 
 If the player tries to discard when a legal play is available, the program will print an error.
 
-<img src="../assets/straights/game-loop-invalid-discard.png" alt="Screenshot of the interface when a human player discards a card when a legal play is available.">
+<img src="../assets/straights/game-loop-invalid-discard.png" alt="Screenshot of the interface when a human player discards a card while a legal play is available.">
 
 `quit`: Ends the program.
 
@@ -62,7 +60,7 @@ If the player tries to discard when a legal play is available, the program will 
 
 When it's a computer player's turn, the program simply prints what card it plays or discards.
 
-<img src="../assets/straights/game-loop-c.png" alt="Screenshot of the interface when it's a computer player's turn.">
+<img src="../assets/straights/game-loop-c.png" alt="Screenshot of the interface when computer players take their turns.">
 
 ### End
 At the end of each round, the program prints each player's discarded cards and their previous and current score.
@@ -82,8 +80,13 @@ During a human player's turn, the following commands are available for debugging
 
 `endscore [score]`: Sets the point total needed to end the game.
 
-<img src="../assets/straights/game-loop-endscore.png" alt="Screenshot of the interface after running the 'endscore' command.">
+<img src="../assets/straights/game-loop-endscore1.png" alt="Screenshot of the interface after running the 'endscore 25' command.">
 
+In the above example, the game will now end when a player exceeds 25 points, instead of the default 80 points.
+
+<img src="../assets/straights/game-loop-endscore2.png" alt="Screenshot of the interface showing how the game ends after a player exceeds 25 points.">
+
+#### Support for Other Player Counts
 The game by default has four players, but by starting the game with the `-bonus` command line argument, the user can choose the number of players.
 
 <img src="../assets/straights/set-start-player-count.png" alt="Screenshot of the interface when specifying the number of players.">
